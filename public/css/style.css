@@ -1,0 +1,12 @@
+.tableHeaders {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#timerValue{
+    display: none;
+}
+
+.timerValue{
+    display: none;
+}
