@@ -16,15 +16,15 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
             $table->string('dish_id');
-            $table->string('table')->unique();
+            $table->string('table_num');
             $table->string('waiter_id');
-            $table->string('status');
-            $table->time('time');
+            $table->string('status_id');
+            $table->string('time');
         });
 
         Schema::create('dishes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('dish_name');
         });
 
         Schema::create('statuses', function (Blueprint $table) {
